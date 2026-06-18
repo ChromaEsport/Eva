@@ -58,10 +58,10 @@ h1 {
 }
 
 .week-day.active {
-  background: #00d3dd;
-  color: black;
+  background: #00d3dd !important;
+  color: black !important;
   font-weight: bold !important;
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .week-day:hover {
