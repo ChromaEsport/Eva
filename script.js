@@ -358,10 +358,18 @@ function renderWeek() {
     });
 
     div.onclick = () => {
-      selectedDay = iso;
-      renderPlayersForDay();
-      renderEventsForDay();
-    };
+
+  selectedDay = iso;
+
+  document.querySelectorAll(".week-day").forEach(day => {
+    day.classList.remove("active");
+  });
+
+  div.classList.add("active");
+
+  renderPlayersForDay();
+  renderEventsForDay();
+};
 
     container.appendChild(div);
   }
