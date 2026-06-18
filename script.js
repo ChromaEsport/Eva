@@ -340,8 +340,19 @@ function renderWeek() {
 
   const today = new Date();
   const container = document.getElementById("weekDays");
-
+  const range = document.getElementById("weekRange");
+  
   container.innerHTML = "";
+
+  const start = new Date(today);
+  const end = new Date(today);
+
+  end.setDate(today.getDate() + 6);
+
+  const options = { day: "2-digit", month: "2-digit" };
+
+  range.textContent =
+    `Semaine du ${start.toLocaleDateString("fr-FR", options)} au ${end.toLocaleDateString("fr-FR", options)}`;
 
   for (let i = 0; i < 7; i++) {
     const d = new Date(today);
@@ -427,6 +438,10 @@ async function renderEventsForDay() {
 
 /* MODALS */
 function openAvailModal() {
+
+  document.getElementById("modalPlayerName").textContent =
+    currentPlayer || "Inconnu";
+
   document.getElementById("availModal").classList.remove("hidden");
 }
 
