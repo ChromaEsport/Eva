@@ -352,6 +352,10 @@ function renderWeek() {
     const div = document.createElement("div");
     div.className = "week-day";
 
+    if (iso === selectedDay) {
+    div.classList.add("active");
+  }
+
     div.textContent = d.toLocaleDateString("fr-FR", {
       weekday: "long",
       day: "2-digit"
