@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       else {
 
   if (info.event.extendedProps.player !== currentPlayer) {
-    alert("You can only edit your own availability.");
+    alert("Vous ne pouvez modifier que vos propres disponibilités.");
     return;
   }
 
