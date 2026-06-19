@@ -352,7 +352,7 @@ function renderWeek() {
   const options = { day: "2-digit", month: "2-digit" };
 
   range.textContent =
-    `Semaine du ${start.toLocaleDateString("fr-FR", options)} au ${end.toLocaleDateString("fr-FR", options)}`;
+    `📆 Semaine du ${start.toLocaleDateString("fr-FR", options)} au ${end.toLocaleDateString("fr-FR", options)}`;
 
   for (let i = 0; i < 7; i++) {
     const d = new Date(today);
