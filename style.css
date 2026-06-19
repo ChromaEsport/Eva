@@ -109,7 +109,6 @@ background: #ffa83b;
     color: #000000;
     font-weight: bold;
     font-size: 18px;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: stretch;
