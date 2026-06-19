@@ -459,6 +459,9 @@ function openEventModal() {
 
   selectedCalendarEvent = null;
 
+  document.getElementById("eventModalTitle").textContent =
+    "Créer un event";
+  
   document.getElementById("eventTitle").value = "";
   document.getElementById("eventDate").value = "";
   document.getElementById("eventStart").value = "";
