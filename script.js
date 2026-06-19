@@ -78,6 +78,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       selectedCalendarEvent = info.event;
 
+      document.getElementById("eventModalTitle").textContent =
+      "Modifier l'event";
+        
       document.getElementById("eventTitle").value =
         info.event.extendedProps.title;
 
